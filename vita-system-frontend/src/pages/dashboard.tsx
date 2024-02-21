@@ -95,8 +95,7 @@ export default function Dashboard() {
   
   
   return (
-    <section className="">
-      {/* <div className="flex flex-col items-center"> */}
+    <section>
 
 
         <Layout>
@@ -104,7 +103,6 @@ export default function Dashboard() {
         <div>
 
  
-      {/* <!-- Cards --> */}
       <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
         <InfoCard title="Total clients" value="6389">
         {/* @ts-ignore */}
@@ -664,65 +662,9 @@ export default function Dashboard() {
           />
         </div>
       </Card.Body>
-{/*       <Card.Footer>
-        <div className="row row-cols-1 row-cols-md-5 text-center">
-          <div className="col mb-sm-2 mb-0">
-            <div className="text-black-50">Visits</div>
-            <div className="fw-semibold">29.703 Users (40%)</div>
-            <ProgressBar
-              className="progress-thin mt-2"
-              variant="success"
-              now={40}
-            />
-          </div>
-          <div className="col mb-sm-2 mb-0">
-            <div className="text-black-50">Unique</div>
-            <div className="fw-semibold">24.093 Users (20%)</div>
-            <ProgressBar
-              className="progress-thin mt-2"
-              variant="info"
-              now={20}
-            />
-          </div>
-          <div className="col mb-sm-2 mb-0">
-            <div className="text-black-50">Page views</div>
-            <div className="fw-semibold">78.706 Views (60%)</div>
-            <ProgressBar
-              className="progress-thin mt-2"
-              variant="warning"
-              now={60}
-            />
-          </div>
-          <div className="col mb-sm-2 mb-0">
-            <div className="text-black-50">New Users</div>
-            <div className="fw-semibold">22.123 Users (80%)</div>
-            <ProgressBar
-              className="progress-thin mt-2"
-              variant="danger"
-              now={80}
-            />
-          </div>
-          <div className="col mb-sm-2 mb-0">
-            <div className="text-black-50">Bounce Rate</div>
-            <div className="fw-semibold">40.15%</div>
-            <ProgressBar
-              className="progress-thin mt-2"
-              variant="primary"
-              now={40}
-            />
-          </div>
-        </div>
-      </Card.Footer> */}
     </Card>
 
 
-{/* 
-  </AdminLayout>
- */}
-  
-
-
-      
 
       <PageTitle>Charts</PageTitle>
       <div className="grid gap-6 mb-8 md:grid-cols-2">
@@ -737,12 +679,12 @@ export default function Dashboard() {
         </ChartCard>
       </div>
     </div>
-   </Layout>       
+    </Layout>    
 
 
         {session?.user?.name}
         <button onClick={() => signOut()}>Sign out</button>
-     {/*  </div> */}
+
     </section>
   )
 }

@@ -6,11 +6,10 @@ import { getSession, signIn } from 'next-auth/react'
 import { useRouter } from 'next/router';
 import { FormEventHandler, useState } from 'react'
 
-/* se remover essa questao do dark reover isso aqui  */
-import { Label, Input, Button, WindmillContext } from '@roketid/windmill-react-ui'
+import { Button, WindmillContext } from '@roketid/windmill-react-ui'
 
 export default function Home() {
-/* talvez remover essa questao do dark */
+
 const { mode } = useContext(WindmillContext)
 const imgSource = mode === 'dark' ? '/assets/img/login-office-dark.jpg' : '/assets/img/login-office.jpg'
 
@@ -45,9 +44,7 @@ const imgSource = mode === 'dark' ? '/assets/img/login-office-dark.jpg' : '/asse
       <div className='flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl dark:bg-gray-800'>
         <div className='flex flex-col overflow-y-auto md:flex-row'>
           <div className='relative h-32 md:h-auto md:w-1/2'>
-            {/* <img src={imgSource} alt="" className='hidden object-cover w-full h-full' /> */}
           
-
             <Image
               aria-hidden='true'
               className='object-cover w-full h-full'
@@ -89,15 +86,10 @@ const imgSource = mode === 'dark' ? '/assets/img/login-office-dark.jpg' : '/asse
             <div>
               <p>Não tem conta? <span>Cadastre-se!</span></p>
             </div>
-
-
               
             <Button  type="submit"className='mt-4 bg-green-800 text-white' block>
               Fazer Login
             </Button>
-           
-
-            
          
           <fieldset className="border-t border-slate-50 mt-[10px]">
             <legend className="mx-auto px-4 text-black text-1xl italic">ou</legend>

@@ -24,5 +24,4 @@ class AuthRepository implements IUserAuthenticate {
         return data;
     }
 }
-  
 export { AuthRepository };
